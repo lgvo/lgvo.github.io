@@ -1,0 +1,77 @@
+@import "bootstrap";
+
+$profile-color: darken($gray-lighter, 05%);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: $font-size-large;
+    background-color: $gray-darker;
+    color: $gray-dark;
+}
+
+.middle {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+    background-color: white;
+    @include box-shadow(rgba(black, .3) 25px 25px 25px 25px);
+
+}
+
+.base {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-image: url('/imgs/annulibw11080p.jpg');
+    display: flex;
+}
+
+.profile {
+    position: relative;
+    font-weight: bold;
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    color: $profile-color;
+
+    img.profile {
+        border: solid $profile-color 1px;
+        padding: 15px;
+        max-height:  200px;
+        max-width:  200px;
+        border-radius: 50%;
+    }
+
+    .links {
+        font-size: 30px;
+        a {
+            color: white;
+            padding: 7px;
+            margin: 4px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $profile-color;
+            border: solid 1px;
+            padding: 6px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.about-me {
+    margin: 5%;
+    position: relative;
+    padding-bottom: 5%;
+    bottom: 0;
+}
+
+.recommendations {
+    display: none;
+}
+    
